@@ -13,10 +13,17 @@ import sorting.variationsOfBubblesort.BidirectionalBubbleSort;
 import sorting.variationsOfBubblesort.RecursiveBubbleSort;
 import sorting.variationsOfSelectionsort.RecursiveSelectionSort;
 
+
+/**
+ * Algoritmo criado com intuito de testar automaticamente de forma aleatória meus algoritmos de ordenação
+ * para o R01 de LEDA-UFCG.
+ * @author github.com/lucasgsa
+ *
+ */
 public class RandomSortTest {
 	
 	public static void getSorted(Integer[] array,int leftIndex, int rightIndex) {
-		AbstractSorting<Integer> sorteador = new RecursiveSelectionSort<>();
+		AbstractSorting<Integer> sorteador = new BubbleSort<>();
 		sorteador.sort(array, leftIndex, rightIndex);
 	}
 	
