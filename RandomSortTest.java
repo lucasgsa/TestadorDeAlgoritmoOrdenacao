@@ -6,12 +6,6 @@ import java.util.Random;
 import org.junit.Assert;
 
 import sorting.AbstractSorting;
-import sorting.simpleSorting.BubbleSort;
-import sorting.simpleSorting.InsertionSort;
-import sorting.simpleSorting.SelectionSort;
-import sorting.variationsOfBubblesort.BidirectionalBubbleSort;
-import sorting.variationsOfBubblesort.RecursiveBubbleSort;
-import sorting.variationsOfSelectionsort.RecursiveSelectionSort;
 
 
 /**
@@ -23,7 +17,8 @@ import sorting.variationsOfSelectionsort.RecursiveSelectionSort;
 public class RandomSortTest {
 	
 	public static void getSorted(Integer[] array,int leftIndex, int rightIndex) {
-		AbstractSorting<Integer> sorteador = new BubbleSort<>();
+		// Instancie o algoritmo aqui.
+		AbstractSorting<Integer> sorteador = null;
 		sorteador.sort(array, leftIndex, rightIndex);
 	}
 	
