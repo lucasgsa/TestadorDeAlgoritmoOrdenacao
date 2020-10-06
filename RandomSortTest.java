@@ -14,6 +14,7 @@ import java.util.Random;
 public class RandomSortTest {
 	
 	static boolean testarNegativos = true;
+	static int rangeRandom = 101;
 	static int quantidadeTestesPorN = 5;
 	static int tamanhoMaximoN = 200;
 	
@@ -76,10 +77,10 @@ public class RandomSortTest {
 		Integer[] array = new Integer[size];
 		for (int i = 0; i < array.length; i++) {
 			if (!testarNegativos || Math.random() < 0.5) {
-				array[i] = randomer.nextInt(101);
+				array[i] = randomer.nextInt(rangeRandom);
 			}
 			else {
-				array[i] = randomer.nextInt(101)*-1;
+				array[i] = randomer.nextInt(rangeRandom)*-1;
 			}
 		}
 		return array;
